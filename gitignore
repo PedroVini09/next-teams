@@ -1,0 +1,26 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.rsuser
+TestResults/
+
+# Segredos (nunca no Git)
+appsettings.Development.json
+appsettings.*.local.json
+*.pem
+.env
+.env.*
+secrets.json
+
+# Editores e sistema
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Node (extensão VS Code, versão 2)
+node_modules/
