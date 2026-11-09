@@ -1,6 +1,6 @@
-<!-- Copyright (c) 2026 Pedro Vinicius. Todos os direitos reservados. Next Teams. -->
+<!-- Copyright (c) 2026 Pedro Vinicius. Todos os direitos reservados. Teamfold. -->
 
-# » NEXT TEAMS
+# » TEAMFOLD
 
 **Projetos de equipe organizados em cima do GitHub.** Cada pessoa altera só as
 pastas liberadas para ela, e o Claude explica em português o que cada pull
@@ -19,12 +19,12 @@ quem está começando.
 
 ## A solução
 
-O Next Teams é uma camada por cima do GitHub (ele **não substitui** o GitHub):
+O Teamfold é uma camada por cima do GitHub (ele **não substitui** o GitHub):
 
 1. O **Admin** cria um projeto novo pelo painel ou conecta um que já existe.
-2. O Next Teams monta a estrutura no GitHub e define quem pode alterar cada pasta.
+2. O Teamfold monta a estrutura no GitHub e define quem pode alterar cada pasta.
 3. Cada **Desenvolvedor** abre o projeto no VS Code com um clique, numa branch da tarefa.
-4. Todo trabalho chega à `main` por pull request, que o Next Teams checa (✅ / ❌)
+4. Todo trabalho chega à `main` por pull request, que o Teamfold checa (✅ / ❌)
    e o Claude resume em 4 blocos.
 
 **Para quem:** equipes de estudantes e pequenas equipes de desenvolvimento,
@@ -56,13 +56,13 @@ Todos leem todo o código. O controle é só sobre quem pode **alterar**.
 
 ```
 src/
-├── Next.Web      # Painel Blazor + endpoint de webhook
-├── Next.Core     # Regra de permissão (sem depender do GitHub nem do banco)
-├── Next.GitHub   # Repositórios, branches, checks, convites
-├── Next.IA       # Fila de resumos de PR com o Claude
-└── Next.Data     # EF Core + MySQL
+├── Teamfold.Web      # Painel Blazor + endpoint de webhook
+├── Teamfold.Core     # Regra de permissão (sem depender do GitHub nem do banco)
+├── Teamfold.GitHub   # Repositórios, branches, checks, convites
+├── Teamfold.IA       # Fila de resumos de PR com o Claude
+└── Teamfold.Data     # EF Core + MySQL
 tests/
-└── Next.Core.Tests
+└── Teamfold.Core.Tests
 ```
 
 ## Roteiro
